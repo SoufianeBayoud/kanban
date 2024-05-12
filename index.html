@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo right">Kanban Nassim</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="#">BWD</a></li>
+                <li><a href="#">DWD</a></li>
+                <li><a href="#">IIP</a></li>
+                <li><a href="#">P&O</a></li>
+                <li id="lijst-toevoegen"><a href="form.html">+</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="kanban-board">
+        <div class="column">
+            <div class="todo-column">
+            <h2>To Do</h2>
+            <!-- <div class="task">Taak 1</div>
+            <div class="task">Taak 2</div> -->
+            
+        </div>
+        </div>
+        <div class="column">
+            <div class="progress-column">
+            <h2>In progress</h2>
+            <!-- <div class="task">Taak 3</div> -->
+        </div>
+        </div>
+        <div class="column">
+            <div class="done-column">
+            <h2>Done</h2>
+            <!-- <div class="task">Taak 4</div>
+            <div class="task">Taak 5</div> -->
+        </div>
+        </div>
+    </div>
+
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red" href="form.html">
+          <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+          <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+          <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+          <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

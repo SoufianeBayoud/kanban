@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+    <body>
+        
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo right">Kanban Nassim</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="#">BWD</a></li>
+                    <li><a href="#">DWD</a></li>
+                    <li><a href="#">IIP</a></li>
+                    <li><a href="#">P&O</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="column" data-status="todo">
+
+                <h4>Nieuwe Taak Toevoegen</h4>
+                <form id="add-task-form">
+                    <div class="input-field">
+                        <input type="text" id="title" name="title" required>
+                        <label for="title">Titel</label>
+                    </div>
+                    <div class="input-field">
+                        <textarea id="description" class="materialize-textarea" name="description" required></textarea>
+                        <label for="description">Beschrijving</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="date" id="deadline" name="deadline">
+                        <label for="deadline">Deadline</label>
+                    </div>
+                    <div class="input-field">
+                        
+                        <select name="category" id="category" style="display: block;">
+                            <option value="toets">Toets</option>
+                            <option value="taak">Taak</option>
+                            <option value="project">Project</option>
+                            <option value="paper">Paper</option>
+                        </select>
+                        <label>Categorie</label>
+                        
+                    </div>
+                    
+                    <div class="input-field">
+                        <input type="text" id="subject" name="subject">
+                        <label for="subject">Vak</label>
+                    </div>
+                    <button type="submit" class="btn">Toevoegen</button>
+                </form>
+        </div>
+   
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>
